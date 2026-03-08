@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+    <!-- Modern, approachable Google Fonts for heading and body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Link to our custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Animation Container: Handles floating hearts/sparkles -->
+    <div class="background-animation" id="bg-animation"></div>
+
+    <main>
+        <!-- Hero Section: Welcome message and main photo -->
+        <section class="hero glass-panel">
+            <div class="hero-content">
+                <div class="image-wrapper">
+                    <!-- Placeholder image with romantic vibe (Unsplash) -->
+                    <img src="IMG_6345.JPG"
+                        alt="Us Together" class="hero-img">
+                </div>
+                <h1 class="title">To My Beautiful Girlfriend</h1>
+                <!-- Container for the JavaScript typing effect -->
+                <div class="typewriter-container">
+                    <p id="typewriter-text" class="message"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Memories Section: Photo gallery with hover effects -->
+        <section class="memories glass-panel">
+            <h2 class="section-title">Our Sweetest Memories</h2>
+            <p class="section-subtitle">Every moment with you is a treasure.</p>
+            <div class="memory-grid">
+                <!-- Memory Item 1 -->
+                <div class="memory-card">
+                    <img src="IMG_7041.JPG"
+                        alt="Holding hands">
+                    <div class="memory-overlay">That first date</div>
+                </div>
+                <!-- Memory Item 2 -->
+                <div class="memory-card">
+                    <img src="16976A48-176B-4EC7-9AD5-22AF1ADD618A.jpg"
+                        alt="Sunset">
+                    <div class="memory-overlay">Sunset walk</div>
+                </div>
+                <!-- Memory Item 3 -->
+                <div class="memory-card">
+                    <img src="0DCCB150-547C-4D5C-AB20-3FD0E3609C3A.jpg"
+                        alt="Laughing">
+                    <div class="memory-overlay">Just being silly</div>
+                </div>
+                <!-- Memory Item 4 -->
+                <div class="memory-card">
+                    <img src="IMG_6468.JPG"
+                        alt="Coffee">
+                    <div class="memory-overlay">Cozy evenings</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons I Love You Section: Interactive 3D flip cards -->
+        <section class="reasons glass-panel">
+            <h2 class="section-title">Reasons I Love You</h2>
+            <p class="section-subtitle">Click the cards to reveal my heart.</p>
+            <div class="reasons-grid">
+                <!-- Reason Card 1: Uses JS inline onclick to toggle flip class -->
+                <div class="reason-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Reason 1</span>
+                        </div>
+                        <div class="card-back">
+                            <p>สวย</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reason Card 2 -->
+                <div class="reason-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Reason 2</span>
+                        </div>
+                        <div class="card-back">
+                            <p>น่ารัก</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reason Card 3 -->
+                <div class="reason-card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Reason 3</span>
+                        </div>
+                        <div class="card-back">
+                            <p>น่าจุ๊บ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: Relationship counter and heartbeat animation -->
+    <footer class="glass-panel">
+        <div class="counter-container">
+            <p>We've been creating magic for</p>
+            <!-- Javascript will inject the time boxes here dynamically -->
+            <div id="time-counter" class="time-counter">
+                <!-- Time counter goes here -->
+            </div>
+        </div>
+        <div class="heart-animation">❤️</div>
+        <p class="footer-note">Forever and always yours.</p>
+    </footer>
+
+    <!-- Link to our custom external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
